@@ -1,59 +1,161 @@
-.app{
-    width: auto;
+html,
+body,
+#root {
+    width: 100vw;
     height: 100vh;
-    display: flex;
-    
+    margin: 0;
+    padding:0;
+        box-sizing: border-box;
+
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+        box-sizing: border-box;
 
 }
 
 .sidebar {
-    width: 500px;
-    height: 100vh;
-    background-color: #f0f0f0;
+   width: 600px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    justify-content: center ;
+        align-items: center;
 }
 
+.options {
+    width: 25%;
+    height: auto;
+        background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3);    border-radius: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px 2px 5px;
+}
+.chat-btn{
+    width: 100%;
+    height: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.25);
+
+
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    padding:15px ;
+    margin-bottom: 3px;
+}
+
+.chatside{
+    width: 75%;
+    height: 100%;
+        background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+
+}
+
+.chatside-header{
+    width: 100%;
+    height: 10%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chatsedit-btn{
+    width: 12%;
+    height: 50%;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+    position:relative;
+    left: -30px;
+}
+
+.search-input {
+    width: 65%;
+    height: 60%;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    background: rgba(2, 2, 2, 0.5);
+    padding: 15px;
+
+}
 .chatcards {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
-    width: 95%;
-    height: 100%;
+    padding: 15px;
+    width: 100%;
+    height: 90%;
+        box-sizing: border-box;
+    align-items: left;
+
 }
 
 .roomcard {
-    width: 100%;
+    width: 95%;
     height: 12%;
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    gap: 13px ;
+    padding: 13px 10px;
+    border-radius: 20px;
     cursor: pointer;
     justify-content: space-between;
     align-items: center;
+            background: rgba(255, 255, 255, 0.25);
+            color: white;
+
 }
 
 .info{
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 70%;
+    width: 65%;
     height: 100%;
     justify-content: center;
 
 }
 
 .roomcard img{
-    height: 100px;
-    width: 20%;
+    height: 70px;
+    width:70px;
     border-radius: 50%;
     object-fit: cover;
-    padding: 2px;
+    padding:2px;
 }
 
 .info p{
